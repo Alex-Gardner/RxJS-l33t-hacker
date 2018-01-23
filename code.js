@@ -40,7 +40,7 @@ const blackHack = {
 	function disableAlert(customers) {
 		when (alerts-enabled) {
 			run disable-override.exe
-			enter ><*perma janky-monkey
+			enter ><*perma janky-mankey
 		}
 	initialize memory takeover . . .
 	if (memory-free) {
@@ -92,6 +92,7 @@ numbers.forEach(item => {
 	var div = document.createElement('div');
 	div.style.backgroundColor = item.color;
 	div.style.color = 'white';
-	div.innerHTML = item.text;
+	div.innerText = item.text;
+	div.style.whiteSpace = 'pre';
 	start.append(div);
 });
